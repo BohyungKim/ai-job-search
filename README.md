@@ -11,7 +11,7 @@ Find remote jobs and let Claude rank them by how well they fit your resume.
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY=your-key-here
+cp .env.example .env               # then put your API key in .env
 cp resume.example.txt resume.txt   # then paste in your own resume
 ```
 

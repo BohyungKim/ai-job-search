@@ -11,7 +11,10 @@ import sys
 
 import anthropic
 import requests
+from dotenv import load_dotenv
 from pydantic import BaseModel
+
+load_dotenv()  # read ANTHROPIC_API_KEY from .env
 
 JOBS_API = "https://remotive.com/api/remote-jobs"
 MODEL = "claude-opus-5-5"
